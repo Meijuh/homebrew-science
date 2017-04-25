@@ -26,6 +26,7 @@ class Hwloc < Formula
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--enable-shared",
+                          "--enable-static",
                           "--prefix=#{prefix}",
                           "--without-x"
     system "make", "install"
