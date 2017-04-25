@@ -36,8 +36,10 @@ class Hwloc < Formula
   end
 
   test do
-    system ENV.cc, "-I#{include}", "-L#{lib}", "-lhwloc",
-           pkgshare/"tests/hwloc_groups.c", "-o", "test"
+    system ENV.cc, "-I#{include}", 
+      pkgshare/"tests/hwloc_groups.c",
+      "-L#{lib}", "-lhwloc",
+      "-o", "test"
     system "./test"
   end
 end
