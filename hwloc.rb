@@ -3,6 +3,7 @@ class Hwloc < Formula
   homepage "http://www.open-mpi.org/projects/hwloc/"
   url "https://www.open-mpi.org/software/hwloc/v1.11/downloads/hwloc-1.11.6.tar.bz2"
   sha256 "7685f7b96c7c79412c494633862612b36f8745f05f84d35ab495d38b456d87fa"
+  revision 1
 
   bottle do
     cellar :any
